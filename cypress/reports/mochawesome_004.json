@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 4,
+    "failures": -3,
+    "start": "2022-12-03T17:00:13.791Z",
+    "end": "2022-12-03T17:00:13.827Z",
+    "duration": 36,
+    "testsRegistered": 4,
+    "passPercent": null,
+    "pendingPercent": 100,
+    "other": 3,
+    "hasOther": true,
+    "skipped": 4,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "f63e26dc-b757-4afe-8d59-2ed5900c0500",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\login.cy.js",
+      "file": "cypress\\e2e\\test\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c3509249-7575-457a-905a-36bda17c88b2",
+          "title": "login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should login with valid credentials",
+              "fullTitle": "login Should login with valid credentials",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('Sam@gmail.com', 'Password@1');\ncy.get('.chakra-heading.css-kmq9po').should('be.visible');",
+              "err": {},
+              "uuid": "9b374a79-b8ef-441a-a457-67c4a94b9361",
+              "parentUUID": "c3509249-7575-457a-905a-36bda17c88b2",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Should not login with invalid password",
+              "fullTitle": "login Should not login with invalid password",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.loginIncorrectPassword('Sam@gmail.com', 'Password');\ncy.get('[class=\"auth0-global-message auth0-global-message-error\"]').should('be.visible');",
+              "err": {},
+              "uuid": "89983824-1cb4-4ca7-89bd-ebce6ad2db5a",
+              "parentUUID": "c3509249-7575-457a-905a-36bda17c88b2",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Should not login with invalid email",
+              "fullTitle": "login Should not login with invalid email",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.loginIncorrectEmail('Sa@gmail.com', 'Password@1');\ncy.get('[class=\"auth0-global-message auth0-global-message-error\"]').should('be.visible');",
+              "err": {},
+              "uuid": "d6e66165-0029-4057-9bdd-a4b0f03b3a62",
+              "parentUUID": "c3509249-7575-457a-905a-36bda17c88b2",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Should not login with invalid email and password",
+              "fullTitle": "login Should not login with invalid email and password",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.loginIncorrectEmailPassword('Sa@gmail.com', 'Password');\ncy.get('[class=\"auth0-global-message auth0-global-message-error\"]').should('be.visible');",
+              "err": {},
+              "uuid": "148e5a40-8ccf-4032-b88c-ece68d9dfed4",
+              "parentUUID": "c3509249-7575-457a-905a-36bda17c88b2",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "9b374a79-b8ef-441a-a457-67c4a94b9361",
+            "89983824-1cb4-4ca7-89bd-ebce6ad2db5a",
+            "d6e66165-0029-4057-9bdd-a4b0f03b3a62",
+            "148e5a40-8ccf-4032-b88c-ece68d9dfed4"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

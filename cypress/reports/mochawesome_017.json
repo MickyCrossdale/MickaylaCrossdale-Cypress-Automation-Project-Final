@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-12-04T16:06:43.628Z",
+    "end": "2022-12-04T16:06:48.938Z",
+    "duration": 5310,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cbd3b53f-c392-4a8b-887e-54175c50183f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCart.cy.js",
+      "file": "cypress\\e2e\\test\\addToCart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "219f804a-b5f8-4d40-8c1d-9c4346ce2de9",
+          "title": "Add To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add an Item to cart",
+              "fullTitle": "Add To Cart Should add an Item to cart",
+              "timedOut": null,
+              "duration": 5246,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('Sam@gmail.com', 'Password@1');\n_addToCart.default.addToCart();\ncy.get('[class=\"snipcart-cart-summary__title snipcart__font--subtitle\"]').should('be.visible');",
+              "err": {
+                "message": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://ui-automation-camp.vercel.app\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin:\n\n  > https://ui-automation-camp.vercel.app\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin above.\n\nA new URL does not match the origin if the 'protocol', 'port' (if specified), and/or 'host' are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.config.js`.\n\nhttps://on.cypress.io/cross-origin-violation",
+                "estack": "CypressError: Cypress detected a cross origin error happened on page load:\n\n  > Blocked a frame with origin \"https://ui-automation-camp.vercel.app\" from accessing a cross-origin frame.\n\nBefore the page load, you were bound to the origin:\n\n  > https://ui-automation-camp.vercel.app\n\nA cross origin error happens when your application navigates to a new URL which does not match the origin above.\n\nA new URL does not match the origin if the 'protocol', 'port' (if specified), and/or 'host' are different.\n\nCypress does not allow you to navigate to a different origin URL within a single test.\n\nYou may need to restructure some of your test code to avoid this problem.\n\nAlternatively you can also disable Chrome Web Security in Chromium-based browsers which will turn off this restriction by setting { chromeWebSecurity: false } in `cypress.config.js`.\n\nhttps://on.cypress.io/cross-origin-violation\n    at onPageLoadErr (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:141527:76)\n    at HTMLIFrameElement.<anonymous> (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:157774:15)\n    at HTMLIFrameElement.dispatch (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:95573:27)\n    at elemData.handle (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:95381:28)\nFrom Your Spec Code:\n    at login (webpack:///./cypress/e2e/page/login.page.js:11:11)\n    at Context.eval (webpack:///./cypress/e2e/test/addToCart.cy.js:12:13)",
+                "diff": null
+              },
+              "uuid": "c2af8fe7-25cd-44c0-9862-9caff5819ade",
+              "parentUUID": "219f804a-b5f8-4d40-8c1d-9c4346ce2de9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c2af8fe7-25cd-44c0-9862-9caff5819ade"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5246,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

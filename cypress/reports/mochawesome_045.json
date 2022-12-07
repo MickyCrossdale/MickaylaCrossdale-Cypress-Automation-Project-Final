@@ -1,0 +1,178 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 0,
+    "pending": 0,
+    "failures": 4,
+    "start": "2022-12-06T01:56:11.552Z",
+    "end": "2022-12-06T01:56:35.786Z",
+    "duration": 24234,
+    "testsRegistered": 4,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "65e037f9-dd3e-47bb-94eb-3250f614ff09",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\login.cy.js",
+      "file": "cypress\\e2e\\test\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "969cfabd-3097-40af-93ef-f01fcc182a2a",
+          "title": "login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should login with valid credentials",
+              "fullTitle": "login Should login with valid credentials",
+              "timedOut": null,
+              "duration": 6534,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('Sam@gmail.com', 'Password@1');\ncy.get('.chakra-heading.css-kmq9po').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[id=\"1-email\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[id=\"1-email\"]`, but never found it.\n    at login (webpack:///./cypress/e2e/page/login.page.js:11:11)\n    at Context.eval (webpack:///./cypress/e2e/test/login.cy.js:10:13)",
+                "diff": null
+              },
+              "uuid": "28c41e58-9f25-4b12-9584-1ffb815d76f1",
+              "parentUUID": "969cfabd-3097-40af-93ef-f01fcc182a2a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should not login with invalid password",
+              "fullTitle": "login Should not login with invalid password",
+              "timedOut": null,
+              "duration": 5898,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.loginIncorrectPassword('Sam@gmail.com', 'Password');\ncy.get('[class=\"auth0-global-message auth0-global-message-error\"]').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[id=\"1-email\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[id=\"1-email\"]`, but never found it.\n    at login.loginIncorrectPassword (webpack:///./cypress/e2e/page/login.page.js:18:11)\n    at Context.eval (webpack:///./cypress/e2e/test/login.cy.js:16:13)",
+                "diff": null
+              },
+              "uuid": "b9c4def2-2778-4416-ae3a-40bdd78bb2a4",
+              "parentUUID": "969cfabd-3097-40af-93ef-f01fcc182a2a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should not login with invalid email",
+              "fullTitle": "login Should not login with invalid email",
+              "timedOut": null,
+              "duration": 5836,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.loginIncorrectEmail('Sa@gmail.com', 'Password@1');\ncy.get('[class=\"auth0-global-message auth0-global-message-error\"]').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[id=\"1-email\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[id=\"1-email\"]`, but never found it.\n    at login.loginIncorrectEmail (webpack:///./cypress/e2e/page/login.page.js:25:11)\n    at Context.eval (webpack:///./cypress/e2e/test/login.cy.js:22:13)",
+                "diff": null
+              },
+              "uuid": "bd17f09c-7883-4da5-b1ab-25c171749748",
+              "parentUUID": "969cfabd-3097-40af-93ef-f01fcc182a2a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should not login with invalid email and password",
+              "fullTitle": "login Should not login with invalid email and password",
+              "timedOut": null,
+              "duration": 5803,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.loginIncorrectEmailPassword('Sa@gmail.com', 'Password');\ncy.get('[class=\"auth0-global-message auth0-global-message-error\"]').should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[id=\"1-email\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[id=\"1-email\"]`, but never found it.\n    at login.loginIncorrectEmailPassword (webpack:///./cypress/e2e/page/login.page.js:32:11)\n    at Context.eval (webpack:///./cypress/e2e/test/login.cy.js:28:13)",
+                "diff": null
+              },
+              "uuid": "16b881f2-f682-4c04-99ee-47810374b735",
+              "parentUUID": "969cfabd-3097-40af-93ef-f01fcc182a2a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "28c41e58-9f25-4b12-9584-1ffb815d76f1",
+            "b9c4def2-2778-4416-ae3a-40bdd78bb2a4",
+            "bd17f09c-7883-4da5-b1ab-25c171749748",
+            "16b881f2-f682-4c04-99ee-47810374b735"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 24071,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

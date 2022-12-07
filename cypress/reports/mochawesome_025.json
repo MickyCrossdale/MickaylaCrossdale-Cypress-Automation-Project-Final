@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-12-05T19:12:21.281Z",
+    "end": "2022-12-05T19:12:30.276Z",
+    "duration": 8995,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "04c8b81e-1e74-483b-b1e8-6b162b7c7e98",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\addToCart.cy.js",
+      "file": "cypress\\e2e\\test\\addToCart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2ef4e04d-764b-4f3a-af81-62c1c378ae90",
+          "title": "Add To Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should add an Item to cart",
+              "fullTitle": "Add To Cart Should add an Item to cart",
+              "timedOut": null,
+              "duration": 8929,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('Sam@gmail.com', 'Password@1');\n_addToCart.default.addToCart();\ncy.get('[class=\"snipcart-cart-summary__title snipcart__font--subtitle\"]').should('be.visible');",
+              "err": {
+                "message": "Error: Syntax error, unrecognized expression: (//img[@src=\"/images/quality-hat-model.jpg\"])[1]",
+                "estack": "Error: Syntax error, unrecognized expression: (//img[@src=\"/images/quality-hat-model.jpg\"])[1]\n    at Sizzle.error (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:91958:8)\n    at Sizzle.tokenize (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:92610:11)\n    at Sizzle.select (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:93037:20)\n    at Function.Sizzle [as find] (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:91262:9)\n    at jQuery.fn.init.find (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:93293:11)\n    at new jQuery.fn.init (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:93408:40)\n    at Object.query (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:170228:10)\n    at $Cy.$$ (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:148426:65)\n    at getElements (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:143398:20)\n    at tryCatcher (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:11327:23)\n    at Promise.attempt.Promise.try (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:8601:29)\n    at resolveElements (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:143448:67)\n    at <unknown> (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:152530:14)\n    at tryCatcher (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:11327:23)\n    at Promise._settlePromiseFromHandler (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:9262:31)\n    at Promise._settlePromise (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:9319:18)\n    at Promise._settlePromise0 (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:9364:10)\n    at Promise._settlePromises (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:9444:18)\n    at _drainQueueStep (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:6034:12)\n    at _drainQueue (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:6027:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:6043:5)\n    at Async.drainQueues (https://ui-automation-camp.vercel.app/__cypress/runner/cypress_runner.js:5913:14)",
+                "diff": null
+              },
+              "uuid": "7ccab8b8-772d-45e1-90c6-7ea8dca65334",
+              "parentUUID": "2ef4e04d-764b-4f3a-af81-62c1c378ae90",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7ccab8b8-772d-45e1-90c6-7ea8dca65334"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8929,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

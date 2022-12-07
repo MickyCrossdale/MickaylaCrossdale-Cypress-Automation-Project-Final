@@ -1,0 +1,155 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2022-12-05T20:42:44.595Z",
+    "end": "2022-12-05T20:43:03.010Z",
+    "duration": 18415,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "536e4847-5f18-4c53-9a00-80708ba0a6c6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\sort.cy.js",
+      "file": "cypress\\e2e\\test\\sort.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4039a4e6-c54c-429b-869f-52c7dfbbff0c",
+          "title": "Filter",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should sort product list from A-Z",
+              "fullTitle": "Filter should sort product list from A-Z",
+              "timedOut": null,
+              "duration": 6677,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('Sam@gmail.com', 'Password@1');\ncy.get('[class=\"chakra-text css-1n64n71\"]').select('az');\nvar productList = ['Quality Fitted Hat', 'Quality Trucker Hat', 'Quality Mousepad', 'Quality Mug', 'Quality Pillow', 'Quality Hooded Sweatshirt', 'Quality Sweatshirt', 'Quality Kids Tshirt', 'Quality Tshirt', 'Quality Vneck', 'Quality Pink Pants', 'Quality Cargo Pants', 'Quality Jeans Pants', 'Quality Blue Shoes', 'Quality Stylish Shoes', 'Quality Heal Shoes', 'Red Couch', 'White Couch', 'Gray Couch', 'Mackbook Pro', 'Dell Laptop', 'HP Laptop'];\nproductList.sort();\ncy.get('[class=\"chakra-text css-1n64n71\"]').each(($elem, index) => {\n  expect($elem.text()).equal(productList[index]);\n});",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[id=\"1-email\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[id=\"1-email\"]`, but never found it.\n    at login (webpack:///./cypress/e2e/page/login.page.js:11:11)\n    at Context.eval (webpack:///./cypress/e2e/test/sort.cy.js:10:13)",
+                "diff": null
+              },
+              "uuid": "7bee618a-a30c-428f-85d3-6c44de0a5f91",
+              "parentUUID": "4039a4e6-c54c-429b-869f-52c7dfbbff0c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should sort product list from low-high",
+              "fullTitle": "Filter should sort product list from low-high",
+              "timedOut": null,
+              "duration": 6089,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\ncy.get('.product_sort_container').select('lohi');\nvar productPrice = [29.99, 9.99, 15.99, 49.99, 7.99, 15.99];\nproductPrice.sort();\ncy.get('.inventory_item_price').each(($elem, index) => {\n  expect($elem.text().replace('$', '')).equal(productPrice[index]);\n});",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[id=\"1-email\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[id=\"1-email\"]`, but never found it.\n    at login (webpack:///./cypress/e2e/page/login.page.js:11:11)\n    at Context.eval (webpack:///./cypress/e2e/test/sort.cy.js:35:13)",
+                "diff": null
+              },
+              "uuid": "854f51ca-6b36-43e0-9154-4c4bb05b86a1",
+              "parentUUID": "4039a4e6-c54c-429b-869f-52c7dfbbff0c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should sort product list from high-low",
+              "fullTitle": "Filter should sort product list from high-low",
+              "timedOut": null,
+              "duration": 5532,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\ncy.get('.product_sort_container').select('hilo');\nvar productPrice = [29.99, 9.99, 15.99, 49.99, 7.99, 15.99];\nproductPrice.sort().reverse();\ncy.get('.inventory_item_price').each(($elem, index) => {\n  expect($elem.text()).equal(productPrice[index]);\n});",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[id=\"1-email\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[id=\"1-email\"]`, but never found it.\n    at login (webpack:///./cypress/e2e/page/login.page.js:11:11)\n    at Context.eval (webpack:///./cypress/e2e/test/sort.cy.js:48:13)",
+                "diff": null
+              },
+              "uuid": "98475b97-f5ca-48dd-a117-068f8c0e368b",
+              "parentUUID": "4039a4e6-c54c-429b-869f-52c7dfbbff0c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7bee618a-a30c-428f-85d3-6c44de0a5f91",
+            "854f51ca-6b36-43e0-9154-4c4bb05b86a1",
+            "98475b97-f5ca-48dd-a117-068f8c0e368b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 18298,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
