@@ -24,6 +24,15 @@ describe.only('Search', () => {
 
     })
 
+    //NEGATIVE TEST
+
+    it.only('Should not be able to search by incorrect spelling',() =>{
+        searchPage.incorrectSpell('Ham')
+        cy.get('.chakra-heading.css-1jhlc8u').should('be.visible')
+
+    })
+
+
    
         
 })  

@@ -32,6 +32,21 @@ describe.only('login', () => {
         cy.get('[class="auth0-global-message auth0-global-message-error"]').should('be.visible')
 
     })
+
+    it.only("Login to platform", () => {
+        cy.visit("https://ui-automation-camp.vercel.app/");
+        cy.get("#signInOrRegister").click();
+        //Login on to site.
+        cy.origin(
+          "https://dev-mlluudmotpwoldtv.us.auth0.com",
+          { args: {} },
+          ({}) => {
+            cy.get('[type="email"]').type("Sam@gmail.com");
+            cy.get('[type="password"]').type("Password@1", { log: false });
+            cy.get("[name=submit]").click();
+          }
+        );
+      });
    
         
 })  

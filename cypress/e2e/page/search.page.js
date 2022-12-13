@@ -26,6 +26,14 @@ class search{
 
     }
 
+    incorrectSpell(search){
+        cy.get(this.searchBtn).scrollIntoView()
+        cy.get(this.searchBtn).click()
+        cy.get(this.searchBtn).type(search)
+
+
+    }
+        
        
 
     }

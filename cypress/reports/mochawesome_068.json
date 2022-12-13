@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-12-08T00:24:17.632Z",
+    "end": "2022-12-08T00:24:29.629Z",
+    "duration": 11997,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "336dd133-ae6d-4da2-9845-b30862b4de38",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\search.cy.js",
+      "file": "cypress\\e2e\\test\\search.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c74905fa-307c-48e8-bdb8-bb32ab2a615c",
+          "title": "Search",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should be able to search for an item",
+              "fullTitle": "Search Should be able to search for an item",
+              "timedOut": null,
+              "duration": 5339,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_search.default.search('Quality Mug');\ncy.get('[class=\"chakra-text css-1n64n71\"]').should('be.visible');",
+              "err": {},
+              "uuid": "6fd54635-f0af-49fa-959c-eab160402947",
+              "parentUUID": "c74905fa-307c-48e8-bdb8-bb32ab2a615c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should be able to search for items by category",
+              "fullTitle": "Search Should be able to search for items by category",
+              "timedOut": null,
+              "duration": 3144,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_search.default.search('Shirt');\ncy.get('.chakra-heading.css-1jhlc8u').should('be.visible');",
+              "err": {},
+              "uuid": "136609a4-2b86-40ab-b4a0-9959820e0e0d",
+              "parentUUID": "c74905fa-307c-48e8-bdb8-bb32ab2a615c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should be able to reset items searched",
+              "fullTitle": "Search Should be able to reset items searched",
+              "timedOut": null,
+              "duration": 3263,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_search.default.reset('Shirt');\ncy.get('.chakra-heading.css-1jhlc8u').should('be.visible');",
+              "err": {},
+              "uuid": "b2f88dec-e42d-4f69-870c-6dd3272d9fc4",
+              "parentUUID": "c74905fa-307c-48e8-bdb8-bb32ab2a615c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6fd54635-f0af-49fa-959c-eab160402947",
+            "136609a4-2b86-40ab-b4a0-9959820e0e0d",
+            "b2f88dec-e42d-4f69-870c-6dd3272d9fc4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11746,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

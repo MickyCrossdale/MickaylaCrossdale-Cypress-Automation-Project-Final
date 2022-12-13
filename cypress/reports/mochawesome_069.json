@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 4,
+    "failures": -3,
+    "start": "2022-12-08T00:24:33.718Z",
+    "end": "2022-12-08T00:24:33.755Z",
+    "duration": 37,
+    "testsRegistered": 4,
+    "passPercent": null,
+    "pendingPercent": 100,
+    "other": 3,
+    "hasOther": true,
+    "skipped": 4,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "e0b391a2-3ae6-47b8-a3be-d9b458a9c452",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\sort.cy.js",
+      "file": "cypress\\e2e\\test\\sort.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "09da072e-02f5-4085-800c-4bcd458e1cd6",
+          "title": "Filter",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should sort product list from A-Z",
+              "fullTitle": "Filter should sort product list from A-Z",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Auth.login('Sam@gmail.com', 'Password@1')\ncy.get('[class=\"chakra-text css-1n64n71\"]').select('az');\nvar productList = ['Quality Fitted Hat', 'Quality Trucker Hat', 'Quality Mousepad', 'Quality Mug', 'Quality Pillow', 'Quality Hooded Sweatshirt', 'Quality Sweatshirt', 'Quality Kids Tshirt', 'Quality Tshirt', 'Quality Vneck', 'Quality Pink Pants', 'Quality Cargo Pants', 'Quality Jeans Pants', 'Quality Blue Shoes', 'Quality Stylish Shoes', 'Quality Heal Shoes', 'Red Couch', 'White Couch', 'Gray Couch', 'Mackbook Pro', 'Dell Laptop', 'HP Laptop'];\nproductList.sort();\ncy.get('[class=\"chakra-text css-1n64n71\"]').each(($elem, index) => {\n  expect($elem.text()).equal(productList[index]);\n});",
+              "err": {},
+              "uuid": "25f7c266-d878-4fe2-84a2-329033692be6",
+              "parentUUID": "09da072e-02f5-4085-800c-4bcd458e1cd6",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should sort product list from Z-A",
+              "fullTitle": "Filter should sort product list from Z-A",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('Sam@gmail.com', 'Password@1');\ncy.get('[class=\"chakra-text css-1n64n71\"]').select('za');\nvar productList = ['Quality Fitted Hat', 'Quality Trucker Hat', 'Quality Mousepad', 'Quality Mug', 'Quality Pillow', 'Quality Hooded Sweatshirt', 'Quality Sweatshirt', 'Quality Kids Tshirt', 'Quality Tshirt', 'Quality Vneck', 'Quality Pink Pants', 'Quality Cargo Pants', 'Quality Jeans Pants', 'Quality Blue Shoes', 'Quality Stylish Shoes', 'Quality Heal Shoes', 'Red Couch', 'White Couch', 'Gray Couch', 'Mackbook Pro', 'Dell Laptop', 'HP Laptop'];\nproductList.sort().reverse();\ncy.get('[class=\"chakra-text css-1n64n71\"]').each(($elem, index) => {\n  expect($elem.text()).equal(productList[index]);\n});",
+              "err": {},
+              "uuid": "8e20ffae-834b-4ca3-a555-b761006d3ec1",
+              "parentUUID": "09da072e-02f5-4085-800c-4bcd458e1cd6",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should sort product list from low-high",
+              "fullTitle": "Filter should sort product list from low-high",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\ncy.get('.product_sort_container').select('lohi');\nvar productPrice = [29.99, 9.99, 15.99, 49.99, 7.99, 15.99];\nproductPrice.sort();\ncy.get('.inventory_item_price').each(($elem, index) => {\n  expect($elem.text().replace('$', '')).equal(productPrice[index]);\n});",
+              "err": {},
+              "uuid": "88441565-924a-4b7c-86a9-ab5901856dd2",
+              "parentUUID": "09da072e-02f5-4085-800c-4bcd458e1cd6",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "should sort product list from high-low",
+              "fullTitle": "Filter should sort product list from high-low",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_login.default.login('standard_user', 'secret_sauce');\ncy.get('.product_sort_container').select('hilo');\nvar productPrice = [29.99, 9.99, 15.99, 49.99, 7.99, 15.99];\nproductPrice.sort().reverse();\ncy.get('.inventory_item_price').each(($elem, index) => {\n  expect($elem.text()).equal(productPrice[index]);\n});",
+              "err": {},
+              "uuid": "77e58e1e-b5f4-4905-949d-80923911e357",
+              "parentUUID": "09da072e-02f5-4085-800c-4bcd458e1cd6",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "25f7c266-d878-4fe2-84a2-329033692be6",
+            "8e20ffae-834b-4ca3-a555-b761006d3ec1",
+            "88441565-924a-4b7c-86a9-ab5901856dd2",
+            "77e58e1e-b5f4-4905-949d-80923911e357"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

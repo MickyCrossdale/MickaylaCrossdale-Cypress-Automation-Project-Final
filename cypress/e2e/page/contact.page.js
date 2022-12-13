@@ -17,10 +17,6 @@ class contact{
     get sucessMessage() { return ('.chakra-heading.css-z59od')}
     
     contact(email, password){
-        //cy.get(this.signInorRegisterBtn).click()
-        //cy.get(this.inPutEmail).type(email)
-        //cy.get(this.inputPassword).type(password)
-        //cy.get(this.loginBtn).click()
         cy.get(this.contactBtn).click()
     }   
 

@@ -8,7 +8,8 @@ module.exports = defineConfig({
 
     baseUrl: "https://ui-automation-camp.vercel.app",
     specPattern: 'cypress/e2e/test/**/*.cy.{js,jsxx,ts,tsx}',
-
+    //viewportHeight: 960,
+    //viewportWidth: 1536,
     reporter: 'mochawesome',
     reporterOptions: {
       reportDir: 'cypress/reports',
