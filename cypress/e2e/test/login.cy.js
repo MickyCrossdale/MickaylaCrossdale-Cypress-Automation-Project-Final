@@ -34,19 +34,17 @@ describe.only('login', () => {
     })
 
     it.only("Login to platform", () => {
-        cy.visit("https://ui-automation-camp.vercel.app/");
-        cy.get("#signInOrRegister").click();
-        //Login on to site.
-        cy.origin(
-          "https://dev-mlluudmotpwoldtv.us.auth0.com",
-          { args: {} },
-          ({}) => {
-            cy.get('[type="email"]').type("Sam@gmail.com");
-            cy.get('[type="password"]').type("Password@1", { log: false });
-            cy.get("[name=submit]").click();
+        
+        cy.get('#signInOrRegister').should('be.visible')  
+        cy.get('#signInOrRegister').click() 
+        cy.get('[name=email]').type("Sam@gmail.com");
+        cy.get('[type="password"]').type("Password@1", { log: false });
+        cy.get(Auth.loginBtn).should('be.visible');
+        cy.get(Auth.loginBtn).click();
+        cy.get(Auth.sucessMessage).should('be.visible')
+        cy.get(Auth.sucessMessage).should('have.text',"Products")
           }
         );
       });
    
         
-})  

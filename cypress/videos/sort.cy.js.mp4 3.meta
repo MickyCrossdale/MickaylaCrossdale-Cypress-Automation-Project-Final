@@ -1,0 +1,16 @@
+;FFMETADATA1
+[CHAPTER]
+TIMEBASE=1/1000
+START=-5762
+END=1141
+title=Filter should sort product list from A-Z
+[CHAPTER]
+TIMEBASE=1/1000
+START=2326
+END=8086
+title=Filter should sort product list from low-high
+[CHAPTER]
+TIMEBASE=1/1000
+START=7804
+END=13865
+title=Filter should sort product list from high-low

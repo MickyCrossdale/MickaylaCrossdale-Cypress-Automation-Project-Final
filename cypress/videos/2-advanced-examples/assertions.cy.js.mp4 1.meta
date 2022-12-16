@@ -1,0 +1,46 @@
+;FFMETADATA1
+[CHAPTER]
+TIMEBASE=1/1000
+START=2041
+END=2837
+title=Assertions Implicit Assertions .should() - make an assertion about the current subject
+[CHAPTER]
+TIMEBASE=1/1000
+START=3368
+END=3639
+title=Assertions Implicit Assertions .and() - chain multiple assertions together
+[CHAPTER]
+TIMEBASE=1/1000
+START=3725
+END=3914
+title=Assertions Explicit Assertions expect - make an assertion about a specified subject
+[CHAPTER]
+TIMEBASE=1/1000
+START=3903
+END=4105
+title=Assertions Explicit Assertions pass your own callback function to should()
+[CHAPTER]
+TIMEBASE=1/1000
+START=4132
+END=4310
+title=Assertions Explicit Assertions finds element by class name regex
+[CHAPTER]
+TIMEBASE=1/1000
+START=4236
+END=4490
+title=Assertions Explicit Assertions can throw any error
+[CHAPTER]
+TIMEBASE=1/1000
+START=4456
+END=4747
+title=Assertions Explicit Assertions matches unknown text between two elements
+[CHAPTER]
+TIMEBASE=1/1000
+START=4773
+END=5040
+title=Assertions Explicit Assertions assert - assert shape of an object
+[CHAPTER]
+TIMEBASE=1/1000
+START=3645
+END=5310
+title=Assertions Explicit Assertions retries the should callback until assertions pass

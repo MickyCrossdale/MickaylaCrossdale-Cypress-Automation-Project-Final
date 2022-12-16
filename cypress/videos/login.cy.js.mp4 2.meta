@@ -1,0 +1,21 @@
+;FFMETADATA1
+[CHAPTER]
+TIMEBASE=1/1000
+START=-5198
+END=1563
+title=login Should login with valid credentials
+[CHAPTER]
+TIMEBASE=1/1000
+START=2558
+END=8378
+title=login Should not login with invalid password
+[CHAPTER]
+TIMEBASE=1/1000
+START=8542
+END=14213
+title=login Should not login with invalid email
+[CHAPTER]
+TIMEBASE=1/1000
+START=13989
+END=19903
+title=login Should not login with invalid email and password

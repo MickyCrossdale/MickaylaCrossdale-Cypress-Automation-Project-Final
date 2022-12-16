@@ -1,0 +1,11 @@
+;FFMETADATA1
+[CHAPTER]
+TIMEBASE=1/1000
+START=-2246
+END=2830
+title=Waiting cy.wait() - wait for a specific amount of time
+[CHAPTER]
+TIMEBASE=1/1000
+START=7509
+END=7919
+title=Waiting cy.wait() - wait for a specific route
