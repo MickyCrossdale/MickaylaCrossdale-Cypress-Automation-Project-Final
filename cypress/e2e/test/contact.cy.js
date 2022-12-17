@@ -6,11 +6,6 @@ describe.only('Conact', () => {
         cy.visit('/contact')
     })
 
-    it('Should be taken to the contact page',() =>{
-        contactPage.contact()
-        cy.get('.chakra-heading.css-z59od').should('be.visible')
-
-    })
 
     it('Should be able to successfully send a message',() =>{
         contactPage.contactMessage('Sam','Dawson','Sam@gmail.com','Quality Camp','Quality Camp 2022')
@@ -21,6 +16,12 @@ describe.only('Conact', () => {
     it('Should not be able to send a message without Mandatory field inserted',() =>{
         contactPage.mandatoryFristName('Dawson','Sam@gmail.com','Quality Camp','Quality Camp 2022')
         cy.get('[class="chakra-form__error-message css-170ki1a"]').should('be.visible')
+
+    })
+
+    it('Should be taken to the contact page',() =>{
+        contactPage.mandatoryEmail('Sam','Dawson','Quality Camp','Quality Camp 2022')
+        cy.get('[class="chakra-form__error-message css-170ki1a"]').should('contain','Field is required!')
 
     })
 

@@ -41,6 +41,16 @@ class contact{
 
     }
 
+    mandatoryEmail(firstname, lastname, subject, message){
+        cy.get(this.contactBtn).click()
+        cy.get(this.firstName).type(firstname)
+        cy.get(this.lastName).type(lastname)
+        cy.get(this.subjectMessage).type(subject)
+        cy.get(this.messageDetail).type(message)
+        cy.get(this.sendMessageBtn).click()
+
+    }
+
         
 
     
